@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "NiveaRegular";
+  src: url("fonts/Nivea-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "NiveaLight";
+  src: url("fonts/nivea-light.woff.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "NiveaBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Nivea-Bold.woff") format("woff");
+}
+a {
+  text-decoration: none;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/*navigation bar*/
+
+.parent {
+    
+  font-family: NiveaLight;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ padding-right: 50px;
+ padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+
+
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+}
+.nav_link {
+  margin-right: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn_primary {
+  display: flex;
+  background-color: #004799;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding-left: 30px;
+  justify-content: space-between;
+  padding-right: 30px;
+  border-radius: 25px;
+  height: 40px;
+}
+
+.box-shadow {
+  -webkit-box-shadow: -2px 14px 5px -8px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: -2px 14px 5px -8px rgba(0, 0, 0, 0.13);
+  box-shadow: -2px 14px 5px -8px rgba(0, 0, 0, 0.13);
+  width: 100vw;
+}
+.with_gradient{
+    background: linear-gradient(180deg, #C4F7FC 0%, #65D6E2 100%);
+}
+
+.inner_flex{
+    display: flex;
+    justify-content: space-between;
+    width: 58em;
+}
+.btn_inner_text{
+    margin-right: 10px;
+}
+.container{
+    max-width: 1500px;
+}
+#hamburger{
+    display: none;
+}
+#mobile_menu{
+    display: none;
+}
+@media screen and (max-width:750px) {
+
+    .inner_flex{
+        display: none;
+        
+    }
+#hamburger{
+    display: block;
+    width: 25px;
+    height: 25px;
+
+}
+
+#mobile_menu{
+       display: flex;
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    top: 65px;
+    border-left: 1px solid black;
+    width: 50vw;
+    justify-content: center;
+}
+.nav_links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+  .nav_link{
+    margin-right: 0px;
+  }
+}
